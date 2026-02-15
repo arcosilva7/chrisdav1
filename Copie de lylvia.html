@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Toi ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }.container {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        animation: heartbeat 1.5s infinite;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    .heart {
+        font-size: 50px;
+        margin: 20px 0;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        background: white;
+        color: #ff6f91;
+        font-size: 1em;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff6f91;
+        color: white;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes heartbeat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+</style>
+
+</head>
+<body><div class="container">
+    <h1>Je t'aime Sylvia ❤️</h1>
+    <div class="heart">💖</div>
+    <p>
+        Sylvia, chaque jour passé à tes côtés est un cadeau merveilleux. Ton sourire illumine ma vie et ton amour remplit mon cœur de bonheur.
+    </p>
+    <p>
+        Merci d'être toi, Sylvia. Merci d'exister et de rendre ma vie plus belle.
+    </p>
+    <button onclick="showMessage()">Clique ici 💌</button>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Sylvia, mon amour pour toi grandit chaque jour ❤️");
+    }
+</script>
+
+</body>
+</html>
